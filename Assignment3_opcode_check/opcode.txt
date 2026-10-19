@@ -1,0 +1,44 @@
+05 id        ADD   2   EAX     imm32   NO    -1    NO
+81 /0 id     ADD   2   r/m32   imm32   YES   000   NO
+01 /r        ADD   2   r/m32   r32     YES   REG   NO
+03 /r        ADD   2   r32     r/m32   YES   REG   NO
+
+25 id        AND   2   EAX     imm32   NO    -1    NO
+81 /4 id     AND   2   r/m32   imm32   YES   100   NO
+21 /r        AND   2   r/m32   r32     YES   REG   NO
+23 /r        AND   2   r32     r/m32   YES   REG   NO
+
+3D id        CMP   2   EAX     imm32   NO    -1    NO
+81 /7 id     CMP   2   r/m32   imm32   YES   111   NO
+39 /r        CMP   2   r/m32   r32     YES   REG   NO
+3B /r        CMP   2   r32     r/m32   YES   REG   NO
+
+FF /1        DEC   1   r/m32   -       YES   001   NO
+48+rd        DEC   1   r32     -       NO    -1    YES
+
+F7 /6        DIV   1   r/m32   -       YES   110   NO
+
+FF /0        INC   1   r/m32   -       YES   000   NO
+40+rd        INC   1   r32     -       NO    -1    YES
+
+89 /r        MOV   2   r/m32   r32     YES   REG   NO
+8B /r        MOV   2   r32     r/m32   YES   REG   NO
+C7 /0 id     MOV   2   r/m32   imm32   YES   000   NO
+B8+rd id     MOV   2   r32     imm32   NO    -1    YES
+
+F7 /4        MUL   1   r/m32   -       YES   100   NO
+
+0D id        OR    2   EAX     imm32   NO    -1    NO
+81 /1 id     OR    2   r/m32   imm32   YES   001   NO
+09 /r        OR    2   r/m32   r32     YES   REG   NO
+0B /r        OR    2   r32     r/m32   YES   REG   NO
+
+2D id        SUB   2   EAX     imm32   NO    -1    NO
+81 /5 id     SUB   2   r/m32   imm32   YES   101   NO
+29 /r        SUB   2   r/m32   r32     YES   REG   NO
+2B /r        SUB   2   r32     r/m32   YES   REG   NO
+
+35 id        XOR   2   EAX     imm32   NO    -1    NO
+81 /6 id     XOR   2   r/m32   imm32   YES   110   NO
+31 /r        XOR   2   r/m32   r32     YES   REG   NO
+33 /r        XOR   2   r32     r/m32   YES   REG   NO
